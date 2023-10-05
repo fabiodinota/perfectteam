@@ -1,6 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import { AnimatePresence } from 'framer-motion'
+import AnimatePresenceProvider from './components/AnimatePresenceProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +18,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+            <AnimatePresenceProvider>
+                <NavBar />
+                <main className='flex justify-center items-center flex-col w-full h-full'>
+                    {children}
+                </main>
+                <Footer />
+            </AnimatePresenceProvider>
+        </body>
     </html>
   )
 }
