@@ -62,7 +62,7 @@ const NavBar = () => {
     }
   return (
     <div className='bg-background flex justify-center items flex-row fixed top-0 left-0 z-50 w-full'>
-        <div className='w-full max-w-[1300px] flex justify-between items-center flex-row py-5 px-5'>
+        <div className='w-full max-w-[1300px] flex justify-between items-center flex-row h-[100px] px-5'>
             <div className='relative h-16 w-16 z-50'>
                 <Image src={Logo} fill alt="Logo" />
             </div>
@@ -92,57 +92,57 @@ const NavBar = () => {
                 {open && (
                     <motion.div initial="initial" animate="animate" exit="exit" variants={containterVariant} className='fixed bg-background top-0 left-0 h-full w-full flex justify-center items-center flex-col gap-5'>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/">
+                            <Link onClick={() => setOpen(!open)} href="/">
                                 Home
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#aanbod">
                                 Aanbod
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Rooster
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Lesgevers
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Reservatie
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Proefles
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Tarieven
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Infrastructuur
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Locatie
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/about">
+                            <Link onClick={() => setOpen(!open)} href="/about">
                                 Team of Champions
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link href="/contact">
+                            <Link onClick={() => setOpen(!open)} href="/contact">
                                 Contact
                             </Link>
                         </motion.div>

@@ -24,7 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
             <AnimatePresenceProvider>
                 <NavBar />
-                <main className='flex justify-center items-center flex-col w-full h-full'>
+                <main className='flex flex-col w-full h-full pt-[100px]'>
                     {children}
                 </main>
                 <Footer />
