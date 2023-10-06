@@ -70,7 +70,7 @@ const NavBar = () => {
 				</div>
 				<ul className="hidden lg:flex list-none flex-row justify-center items-center gap-10">
 					<li className="text-[20px]">
-						<Link href="#home">Home</Link>
+						<Link href="/#home">Home</Link>
 					</li>
 					<li
 						onMouseEnter={() => setHovering(true)}
@@ -106,21 +106,21 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#aanbod">Aanbod</Link>
+											<Link href="/#aanbod">Aanbod</Link>
 										</motion.div>
 										<motion.div
                                             key={"rooster"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#rooster">Rooster</Link>
+											<Link href="/#rooster">Rooster</Link>
 										</motion.div>
 										<motion.div
                                             key={"lesgevers"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#lesgevers">
+											<Link href="/#lesgevers">
 												Lesgevers
 											</Link>
 										</motion.div>
@@ -129,7 +129,7 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#reservatie">
+											<Link href="/#reservatie">
 												Reservatie
 											</Link>
 										</motion.div>
@@ -138,7 +138,7 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#reservatie">
+											<Link href="/#reservatie">
 												Proefles
 											</Link>
 										</motion.div>
@@ -147,7 +147,7 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#tarieven">
+											<Link href="/#tarieven">
 												Tarieven
 											</Link>
 										</motion.div>
@@ -156,7 +156,7 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#infrastructuur">
+											<Link href="/#infrastructuur">
 												Infrastructuur
 											</Link>
 										</motion.div>
@@ -165,14 +165,14 @@ const NavBar = () => {
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#locatie">Locatie</Link>
+											<Link href="/#locatie">Locatie</Link>
 										</motion.div>
 										<motion.div
                                             key={"teamofchampions"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="#teamofchampions">
+											<Link href="/#teamofchampions">
 												Team of Champions
 											</Link>
 										</motion.div>
@@ -182,7 +182,7 @@ const NavBar = () => {
 						</div>
 					</li>
 					<li className="text-[20px]">
-						<Link href="#contact">Contact</Link>
+						<Link href="/#contact">Contact</Link>
 					</li>
 				</ul>
 
@@ -214,7 +214,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#home"
+									href="/#home"
 								>
 									Home
 								</Link>
@@ -226,7 +226,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#aanbod"
+									href="/#aanbod"
 								>
 									Aanbod
 								</Link>
@@ -238,7 +238,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#rooster"
+									href="/#rooster"
 								>
 									Rooster
 								</Link>
@@ -250,7 +250,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#lesgevers"
+									href="/#lesgevers"
 								>
 									Lesgevers
 								</Link>
@@ -262,7 +262,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#reservatie"
+									href="/#reservatie"
 								>
 									Reservatie
 								</Link>
@@ -274,7 +274,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#reservatie"
+									href="/#reservatie"
 								>
 									Proefles
 								</Link>
@@ -286,7 +286,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#tarieven"
+									href="/#tarieven"
 								>
 									Tarieven
 								</Link>
@@ -298,7 +298,7 @@ const NavBar = () => {
 								<Link
                                     key={"infrastructuur"}
 									onClick={() => setOpen(!open)}
-									href="#infrastructuur"
+									href="/#infrastructuur"
 								>
 									Infrastructuur
 								</Link>
@@ -310,7 +310,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#locatie"
+									href="/#locatie"
 								>
 									Locatie
 								</Link>
@@ -322,7 +322,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#teamofchampions"
+									href="/#teamofchampions"
 								>
 									Team of Champions
 								</Link>
@@ -334,7 +334,7 @@ const NavBar = () => {
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="#contact"
+									href="/#contact"
 								>
 									Contact
 								</Link>
