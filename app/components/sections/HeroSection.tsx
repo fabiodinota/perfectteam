@@ -87,6 +87,8 @@ const HeroSection = () => {
 				<Image
 					src={HeroImage}
 					fill
+                    loading="eager"
+                    sizes="100vw"
 					className="object-cover"
 					alt={""}
 				/>
