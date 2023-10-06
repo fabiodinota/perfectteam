@@ -10,6 +10,7 @@ import LesgeversSection from "./components/sections/LesgeversSection";
 import RoosterSection from "./components/sections/RoosterSection";
 import ReservatieSection from "./components/sections/ReservatieSection";
 import TarievenSection from "./components/sections/TarievenSection";
+import InfrastructuurSection from "./components/sections/InfrastructuurSection";
 
 export default function Home() {
 
@@ -28,6 +29,7 @@ export default function Home() {
                     <RoosterSection />
                     <ReservatieSection />
                     <TarievenSection />
+                    <InfrastructuurSection />
                     <br />
 
                     <br />

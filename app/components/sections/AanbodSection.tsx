@@ -41,7 +41,7 @@ const AanbodSection = () => {
             imageSide='right'
         />
         <Socials facebook instagram youtube Text='Volg ons op Social Media' color={"#B0F945"} />
-        <iframe className="max-w-[1000px] aspect-video h-full w-full mt-[65px]" src="https://www.youtube.com/embed/BIKoGS9h2HY" title="A day at the Perfect Team, Team Of Champions (vol.1)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <iframe className="max-w-[1000px] aspect-video h-full w-full mt-[65px]" loading='lazy' src="https://www.youtube.com/embed/BIKoGS9h2HY" title="A day at the Perfect Team, Team Of Champions (vol.1)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
         <AanbodComponent 
             image={MiniMovement}

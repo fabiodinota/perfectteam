@@ -10,15 +10,15 @@ const HeroSection = () => {
   return (
     <section id="home" className="h-[86dvh] overflow-hidden relative flex justify-center items-end">
         <div className="w-screen max-w-[1300px] mx-5 relative z-10 mb-20">
-            <h1 className="text-[10vw] md:text-[9vw] lg:text-[100px] whitespace-nowrap leading-tight font-bold">
-                <span className="flex flex-row gap-5 overflow-hidden">
+            <h1 className="text-[14vw] sm:text-[10vw] md:text-[9vw] lg:text-[100px] whitespace-nowrap leading-tight font-bold">
+                <span className="flex flex-row gap-3 sm:gap-5 overflow-hidden">
                     <motion.span className="" initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 1, delay: 0.0, ease: [0.200,0.005,0.000,0.995] }}>
                         Perfect
                     </motion.span>
                     <motion.span className="" initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 1, delay: 0.1, ease: [0.200,0.005,0.000,0.995] }}>
                         Team
                     </motion.span>
-                    <motion.span className="" initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 1, delay: 0.2, ease: [0.200,0.005,0.000,0.995] }}>
+                    <motion.span className="hidden sm:block" initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 1, delay: 0.2, ease: [0.200,0.005,0.000,0.995] }}>
                         MMA
                     </motion.span>
                 </span>
