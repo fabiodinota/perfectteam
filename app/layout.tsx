@@ -23,7 +23,15 @@ export const metadata: Metadata = {
             {
                 url: "https://cdn.discordapp.com/attachments/1039234208071172187/1159931505984929822/OGImage.png?ex=6532d165&is=65205c65&hm=5cb358fd8ee5800b27e5ea96ecdda7ddf5762de2ac4be77737eb00441bc3a47f&",
                 alt: "Perfect Team MMA",
+                width: 1200,
+                height: 630,
             },
+            {
+                url: "https://cdn.discordapp.com/attachments/1039234208071172187/1159936260387905728/smallOGImage.png?ex=6532d5d3&is=652060d3&hm=7704dedfd6e2d9a02a11c5d81d33ea9e282e71d127fffafb9792d963d781f323&",
+                alt: "Perfect Team MMA",
+                width: 600,
+                height: 315,
+            }
         ],
     },
 };
