@@ -20,12 +20,7 @@ body {
 }
 
 @layer components {
-	.background_lessen {
-		background-image: url("../public/reservatie/lessen.png");
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
+
 	.background_proeflessen {
 		background-image: url("../public/reservatie/proeflessen.png");
 		background-position: center center;

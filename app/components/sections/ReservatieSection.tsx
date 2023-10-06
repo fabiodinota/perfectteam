@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
+import Lessen from "../../../public/reservatie/lessen.png";
+import ProefLessen from "../../../public/reservatie/proeflessen.png";
 
 const ReservatieSection = () => {
 	return (
@@ -14,7 +17,7 @@ const ReservatieSection = () => {
 				verrichten.
 			</p>
 			<div className="flex justify-center items-center w-full flex-col lg:flex-row gap-5 mt-[50px]">
-				<div className="background_lessen w-full h-[600px] flex justify-end items-start flex-col p-5">
+				<div className="relative w-full h-[600px] flex justify-end items-start flex-col p-5">
 					<h1 className="font-semibold text-[28px] mt-3">
 						Reserveer Lessen Online
 					</h1>
@@ -28,10 +31,11 @@ const ReservatieSection = () => {
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
 						<Link href="">Reserveer Les</Link>
 					</button>
+                    <Image src={Lessen} alt="image" fill className="object-cover -z-10" />
 				</div>
 				<div
 					id="proefles"
-					className="background_proeflessen w-full h-[600px] flex justify-end items-start flex-col p-5"
+					className="relative w-full h-[600px] flex justify-end items-start flex-col p-5"
 				>
 					<h1 className="font-semibold text-[28px] mt-3">
 						Aanvragen Proefles
@@ -44,6 +48,7 @@ const ReservatieSection = () => {
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
 						<Link href="">Vraag Proefles Aan</Link>
 					</button>
+                    <Image src={ProefLessen} alt="image" fill className="object-cover -z-10" />
 				</div>
 			</div>
 		</section>
