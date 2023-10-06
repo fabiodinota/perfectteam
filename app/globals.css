@@ -2,35 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 html {
-    --scroll-behavior: smooth!important;
-    scroll-behavior: smooth!important;
+	--scroll-behavior: smooth !important;
+	scroll-behavior: smooth !important;
 }
 
-body{
-    background-color: #101010;
-    font-family: space-grotesk, sans-serif;
-    color: white;
-
+body {
+	background-color: #101010;
+	font-family: space-grotesk, sans-serif;
+	color: white;
 }
 
-*{
-    font-family: 'Space Grotesk', sans-serif;
+* {
+	font-family: "Space Grotesk", sans-serif;
 }
 
-@layer components { 
-    .background_lessen{
-        background-image: url('../public/reservatie/lessen.png');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .background_proeflessen{
-        background-image: url('../public/reservatie/proeflessen.png');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+@layer components {
+	.background_lessen {
+		background-image: url("../public/reservatie/lessen.png");
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.background_proeflessen {
+		background-image: url("../public/reservatie/proeflessen.png");
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
