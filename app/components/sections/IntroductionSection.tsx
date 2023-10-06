@@ -14,14 +14,14 @@ const IntroductionSection = () => {
 				uitgebreid assortiment gevechtssporten aan in een professionele
 				infrastructuur en dit onder begeleiding van top instructeurs.
 			</p>
-			<iframe
+			{/* <iframe
 				className="max-w-[1000px] aspect-video h-full w-full mt-[65px]"
 				loading="lazy"
 				src="https://www.youtube.com/embed/Of1usV4RGyw"
 				title="A day at the Perfect Team, Team Of Champions (vol.1)"
 				frameBorder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			></iframe>
+			></iframe> */}
 		</section>
 	);
 };
