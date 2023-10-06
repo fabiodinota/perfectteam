@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { AnimatePresence } from "framer-motion";
-import AnimatePresenceProvider from "./components/AnimatePresenceProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Perfect Team MMA",
@@ -43,7 +41,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+            <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
+			<body className={spaceGrotesk.className}>
                 <NavBar />
                 <main className="flex flex-col w-full h-full pt-[100px]">
                     {children}
