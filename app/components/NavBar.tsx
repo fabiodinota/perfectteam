@@ -16,8 +16,6 @@ const NavBar = () => {
 		setOpen(!open);
 	};
 
-	console.log(hovering);
-
 	if (typeof window !== "undefined") {
 		window.addEventListener("resize", () => {
 			if (window.innerWidth > 1024) {
@@ -68,11 +66,11 @@ const NavBar = () => {
 		<div className="bg-background flex justify-center items flex-row fixed top-0 left-0 z-50 w-full">
 			<div className="w-full max-w-[1300px] flex justify-between items-center flex-row h-[100px] px-5">
 				<div className="relative h-16 w-16 z-50">
-					<Image src={Logo} fill alt="Logo" />
+					<Image quality={100} src={Logo} fill alt="Logo" />
 				</div>
 				<ul className="hidden lg:flex list-none flex-row justify-center items-center gap-10">
 					<li className="text-[20px]">
-						<Link href="/">Home</Link>
+						<Link href="#home">Home</Link>
 					</li>
 					<li
 						onMouseEnter={() => setHovering(true)}
@@ -100,21 +98,25 @@ const NavBar = () => {
 										animate="animate"
 										exit="exit"
 										variants={containterVariant}
+                                        key={"info"}
 										className="absolute z-50 shadow-lg shadow-black right-0 top-7 bg-background rounded-xl p-5 flex justify-center items-center flex-col gap-5"
 									>
 										<motion.div
+                                            key={"aanbod"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
 											<Link href="#aanbod">Aanbod</Link>
 										</motion.div>
 										<motion.div
+                                            key={"rooster"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
 											<Link href="#rooster">Rooster</Link>
 										</motion.div>
 										<motion.div
+                                            key={"lesgevers"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
@@ -123,6 +125,7 @@ const NavBar = () => {
 											</Link>
 										</motion.div>
 										<motion.div
+                                            key={"reservatie"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
@@ -131,6 +134,7 @@ const NavBar = () => {
 											</Link>
 										</motion.div>
 										<motion.div
+                                            key={"proefles"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
@@ -139,6 +143,7 @@ const NavBar = () => {
 											</Link>
 										</motion.div>
 										<motion.div
+                                            key={"tarieven"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
@@ -147,24 +152,27 @@ const NavBar = () => {
 											</Link>
 										</motion.div>
 										<motion.div
+                                            key={"infrastructuur"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="/about">
+											<Link href="#infrastructuur">
 												Infrastructuur
 											</Link>
 										</motion.div>
 										<motion.div
+                                            key={"locatie"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="/about">Locatie</Link>
+											<Link href="#locatie">Locatie</Link>
 										</motion.div>
 										<motion.div
+                                            key={"teamofchampions"}
 											variants={divVariants}
 											className="text-[20px] text-center"
 										>
-											<Link href="/about">
+											<Link href="#teamofchampions">
 												Team of Champions
 											</Link>
 										</motion.div>
@@ -174,7 +182,7 @@ const NavBar = () => {
 						</div>
 					</li>
 					<li className="text-[20px]">
-						<Link href="/contact">Contact</Link>
+						<Link href="#contact">Contact</Link>
 					</li>
 				</ul>
 
@@ -200,6 +208,7 @@ const NavBar = () => {
 							className="fixed bg-background top-0 left-0 h-full w-full flex justify-center items-center flex-col gap-5"
 						>
 							<motion.div
+                                key={"home"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -211,6 +220,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"aanbod"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -222,6 +232,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"rooster"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -233,6 +244,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"lesgevers"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -244,6 +256,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"reservatie"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -255,6 +268,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"proefles"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -266,6 +280,7 @@ const NavBar = () => {
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"tarieven"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
@@ -281,41 +296,45 @@ const NavBar = () => {
 								className="text-[20px]"
 							>
 								<Link
+                                    key={"infrastructuur"}
 									onClick={() => setOpen(!open)}
-									href="/about"
+									href="#infrastructuur"
 								>
 									Infrastructuur
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"locatie"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="/about"
+									href="#locatie"
 								>
 									Locatie
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"teamofchampions"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="/about"
+									href="#teamofchampions"
 								>
 									Team of Champions
 								</Link>
 							</motion.div>
 							<motion.div
+                                key={"contact"}
 								variants={divVariants}
 								className="text-[20px]"
 							>
 								<Link
 									onClick={() => setOpen(!open)}
-									href="/contact"
+									href="#contact"
 								>
 									Contact
 								</Link>

@@ -20,11 +20,7 @@ body {
 }
 
 @layer components {
-
-	.background_proeflessen {
-		background-image: url("../public/reservatie/proeflessen.png");
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+	.grid-rows-8 {
+		grid-template-rows: repeat(8, minmax(0, 1fr));
 	}
 }

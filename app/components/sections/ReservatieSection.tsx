@@ -31,7 +31,12 @@ const ReservatieSection = () => {
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
 						<Link href="">Reserveer Les</Link>
 					</button>
-                    <Image src={Lessen} alt="image" fill className="object-cover -z-10" />
+					<Image
+						src={Lessen}
+						alt="image"
+						fill
+						className="object-cover -z-10"
+					/>
 				</div>
 				<div
 					id="proefles"
@@ -48,7 +53,12 @@ const ReservatieSection = () => {
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
 						<Link href="">Vraag Proefles Aan</Link>
 					</button>
-                    <Image src={ProefLessen} alt="image" fill className="object-cover -z-10" />
+					<Image
+						src={ProefLessen}
+						alt="image"
+						fill
+						className="object-cover -z-10"
+					/>
 				</div>
 			</div>
 		</section>

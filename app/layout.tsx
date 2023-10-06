@@ -21,13 +21,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<AnimatePresenceProvider>
-					<NavBar />
-					<main className="flex flex-col w-full h-full pt-[100px]">
-						{children}
-					</main>
-					<Footer />
-				</AnimatePresenceProvider>
+                <NavBar />
+                <main className="flex flex-col w-full h-full pt-[100px]">
+                    {children}
+                </main>
+                <Footer />
 			</body>
 		</html>
 	);

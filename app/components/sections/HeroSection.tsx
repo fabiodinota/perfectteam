@@ -1,11 +1,19 @@
+"use client";
 import { useTransform, useScroll, motion } from "framer-motion";
 import Image from "next/image";
 import HeroImage from "../../../public/hero/heroimage.png";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HeroSection = () => {
 	const { scrollY } = useScroll();
 	const heroImageY = useTransform(scrollY, [0, 1000], [0, 500]);
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
 	return (
 		<section
@@ -69,7 +77,7 @@ const HeroSection = () => {
 					data-aos-delay="400"
 					className="px-20 h-[60px] bg-green text-background"
 				>
-					<Link href="">Train bij ons!</Link>
+					<Link href="/">Train bij ons!</Link>
 				</button>
 			</div>
 			<motion.div
@@ -77,7 +85,6 @@ const HeroSection = () => {
 				style={{ y: heroImageY }}
 			>
 				<Image
-					loading="eager"
 					src={HeroImage}
 					fill
 					className="object-cover"

@@ -1,22 +1,26 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const InfrastructuurModalComponent = ({
+const ModalComponent = ({
 	slideIndex,
 	onClick,
 	images,
+	size,
 }: {
 	slideIndex: number;
 	onClick: () => void;
 	images: StaticImageData[];
+	size?: string;
 }) => {
 	const minMax = {
 		min: 0,
 		max: images.length - 1,
 	};
 
-	const [slide, setSlide] = useState(slideIndex - 1);
+	const [slide, setSlide] = useState(slideIndex);
 
 	const Decrease = () => {
 		if (slide >= minMax.min + 1 && slide <= minMax.max) {
@@ -65,11 +69,11 @@ const InfrastructuurModalComponent = ({
 		>
 			<button
 				onClick={onClick}
-				className="absolute top-10 right-10 z-50 rounded-full bg-[#202020] bg-opacity-50 w-20 h-20 grid place-content-center"
+				className="absolute top-10 right-10 z-50 rounded-full bg-[#202020] bg-opacity-50 w-14 h-14 grid place-content-center"
 			>
 				<svg
-					width="50"
-					height="50"
+					width="30"
+					height="30"
 					viewBox="0 0 50 50"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +124,16 @@ const InfrastructuurModalComponent = ({
 					initial="initial"
 					animate="animate"
 					exit="exit"
-					className="w-full h-min max-w-[1300px] aspect-video overflow-hidden relative bg-black"
+					className={`w-full  ${
+						size === "small"
+							? "max-w-[600px] h-[500px]"
+							: "max-w-[1300px] aspect-video h-min"
+					}  overflow-hidden relative bg-black`}
 				>
 					<Image
 						src={images[slide]}
 						fill
+						quality={100}
 						className="object-cover"
 						alt="infrastructuur"
 					/>
@@ -159,4 +168,4 @@ const InfrastructuurModalComponent = ({
 	);
 };
 
-export default InfrastructuurModalComponent;
+export default ModalComponent;
