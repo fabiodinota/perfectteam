@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Perfect Team MMA",
 	description: "Perfect Team Mixed Martial Arts training center biedt een uitgebreid assortiment gevechtssporten aan in een professionele infrastructuur en dit onder begeleiding van top instructeurs.",
+    themeColor: "#B0F945",
     openGraph: {
         type: "website",
         locale: "nl_BE",
