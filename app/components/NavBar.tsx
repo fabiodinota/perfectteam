@@ -4,15 +4,19 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Logo from '../../public/logo_perfectteam.png'
 import Link from 'next/link'
-import Menu from '../../public/menu.svg'
-import Close from '../../public/close.svg'
+import Menu from '../../public/navbar/menu.svg'
+import Close from '../../public/navbar/close.svg'
+import Arrow from '../../public/navbar/arrow.svg'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const NavBar = () => {
     const [open, setOpen] = useState(false)
+    const [hovering, setHovering] = useState(false)
     const OpenMenu = () => {
         setOpen(!open)
     }
+
+    console.log(hovering)
 
     if(typeof window !== "undefined") {
         window.addEventListener('resize', () => {
@@ -72,10 +76,65 @@ const NavBar = () => {
                         Home
                     </Link>
                 </li>
-                <li className='text-[20px]'>
-                    <Link href="/about">
-                        Info
-                    </Link>
+                <li onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)} className='text-[20px]'>
+                    <div className='flex flex-row items-center gap-2 relative'>
+                        Info 
+                        <div className={`relative w-4 h-4 duration-300 object-center ${hovering ? "rotate-180" : "rotate-0"}`}>
+                            <Image src={Arrow} className='object-contain' fill alt="Arrow" />
+                        </div>
+                        <AnimatePresence mode='wait'>
+
+                            {hovering && (
+                                <motion.div initial="initial" animate="animate" exit="exit" variants={containterVariant} className='absolute z-50 shadow-lg shadow-black right-0 top-7 bg-background rounded-xl p-5 flex justify-center items-center flex-col gap-5'>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#aanbod">
+                                            Aanbod
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#rooster">
+                                            Rooster
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#lesgevers">
+                                            Lesgevers
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#reservatie">
+                                            Reservatie
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#reservatie">
+                                            Proefles
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="#tarieven">
+                                            Tarieven
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="/about">
+                                            Infrastructuur
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="/about">
+                                            Locatie
+                                        </Link>
+                                    </motion.div>
+                                    <motion.div variants={divVariants} className='text-[20px] text-center'>
+                                        <Link href="/about">
+                                            Team of Champions
+                                        </Link>
+                                    </motion.div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
                 </li>
                 <li className='text-[20px]'>
                     <Link href="/contact">
@@ -92,7 +151,7 @@ const NavBar = () => {
                 {open && (
                     <motion.div initial="initial" animate="animate" exit="exit" variants={containterVariant} className='fixed bg-background top-0 left-0 h-full w-full flex justify-center items-center flex-col gap-5'>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/">
+                            <Link onClick={() => setOpen(!open)} href="#home">
                                 Home
                             </Link>
                         </motion.div>
@@ -102,27 +161,27 @@ const NavBar = () => {
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#rooster">
                                 Rooster
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#lesgevers">
                                 Lesgevers
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#reservatie">
                                 Reservatie
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#reservatie">
                                 Proefles
                             </Link>
                         </motion.div>
                         <motion.div variants={divVariants} className='text-[20px]'>
-                            <Link onClick={() => setOpen(!open)} href="/about">
+                            <Link onClick={() => setOpen(!open)} href="#tarieven">
                                 Tarieven
                             </Link>
                         </motion.div>
@@ -151,6 +210,7 @@ const NavBar = () => {
             </AnimatePresence>
         </div>
     </div>
+
   )
 }
 

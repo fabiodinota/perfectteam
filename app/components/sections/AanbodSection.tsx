@@ -1,19 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
 import AanbodComponent from './AanbodComponent/AanbodComponent'
-import MMA from '../../../public/mma.png'
-import Kickboxing from '../../../public/kickboxing.png'
-import Grappling from '../../../public/grappling.png'
-import Crossfight from '../../../public/crossfight.png'
+import MMA from '../../../public/aanbod/mma.png'
+import Kickboxing from '../../../public/aanbod/kickboxing.png'
+import Grappling from '../../../public/aanbod/grappling.png'
+import Crossfight from '../../../public/aanbod/crossfight.png'
 import Socials from './AanbodComponent/Socials'
-import MiniMovement from '../../../public/minimovement.png'
-import Kickboxing4Kids from '../../../public/kickboxing4kids.png'
-import MMA4Kids from '../../../public/mma4kids.png'
-import Women from '../../../public/women.png'
+import MiniMovement from '../../../public/aanbod/minimovement.png'
+import Kickboxing4Kids from '../../../public/aanbod/kickboxing4kids.png'
+import MMA4Kids from '../../../public/aanbod/mma4kids.png'
+import Women from '../../../public/aanbod/women.png'
 
 const AanbodSection = () => {
   return (
-    <section id='aanbod' className='w-full h-full flex justify-center items-center flex-col mt-[100px] px-5'>
+    <section id='aanbod' className='w-full h-full flex justify-center items-center flex-col pt-[100px] px-5'>
         <h2 className='text-[36px] font-bold text-center'>Aanbod</h2>
         <p className='text-[20px] max-w-[800px] text-center pt-3'>Ons lessenrooster voorziet lessen voor alle leeftijden en niveaus. Ervaring is een pluspunt maar zeker geen vereiste. Kom gerust een gratis proeflesje volgen en overtuig jezelf.</p>
         <AanbodComponent 

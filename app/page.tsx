@@ -6,6 +6,10 @@ import 'aos/dist/aos.css';
 import HeroSection from "./components/sections/HeroSection";
 import IntroductionSection from "./components/sections/IntroductionSection";
 import AanbodSection from "./components/sections/AanbodSection";
+import LesgeversSection from "./components/sections/LesgeversSection";
+import RoosterSection from "./components/sections/RoosterSection";
+import ReservatieSection from "./components/sections/ReservatieSection";
+import TarievenSection from "./components/sections/TarievenSection";
 
 export default function Home() {
 
@@ -20,6 +24,19 @@ export default function Home() {
                 <div className="h-full w-full flex flex-col justify-center items-center max-w-[1300px]">
                     <IntroductionSection /> 
                     <AanbodSection />
+                    <LesgeversSection />
+                    <RoosterSection />
+                    <ReservatieSection />
+                    <TarievenSection />
+                    <br />
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br /><br />
+
                 </div> 
             </div>
         </>

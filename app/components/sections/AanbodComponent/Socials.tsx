@@ -1,12 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
-import Facebook from '../../../../public/facebook.svg'
-import Instagram from '../../../../public/instagram.svg'
-import YouTube from '../../../../public/youtube.svg'
 
 const Socials = ({ color, Text, facebook, instagram, youtube }: { color: string, Text: string, facebook?: boolean, instagram?: boolean, youtube?: boolean }) => {
-
-    console.log(color)
   return (
     <div className='flex flex-col justify-center items-center w-full mt-[50px]'>
         <div className='flex flex-row justify-center items-center w-full gap-5'>

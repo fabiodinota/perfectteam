@@ -1,6 +1,6 @@
 import { useTransform, useScroll, motion } from "framer-motion";
 import Image from "next/image";
-import HeroImage from "../../../public/heroimage.png";
+import HeroImage from "../../../public/hero/heroimage.png";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -8,7 +8,7 @@ const HeroSection = () => {
     const heroImageY = useTransform(scrollY, [0, 1000], [0, 500]);
 
   return (
-    <section id="#home" className="h-[86dvh] overflow-hidden relative flex justify-center items-end">
+    <section id="home" className="h-[86dvh] overflow-hidden relative flex justify-center items-end">
         <div className="w-screen max-w-[1300px] mx-5 relative z-10 mb-20">
             <h1 className="text-[10vw] md:text-[9vw] lg:text-[100px] whitespace-nowrap leading-tight font-bold">
                 <span className="flex flex-row gap-5 overflow-hidden">
@@ -31,7 +31,7 @@ const HeroSection = () => {
             </button>
         </div>
         <motion.div className="h-full absolute top-0 left-0 w-screen z-0" style={{ y: heroImageY }}>
-            <Image src={HeroImage} fill className="object-cover" alt={""} />
+            <Image loading="eager" src={HeroImage} fill className="object-cover" alt={""} />
         </motion.div>
     </section>
   )
