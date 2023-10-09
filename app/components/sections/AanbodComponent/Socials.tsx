@@ -30,7 +30,7 @@ const Socials = ({
 			</div>
 			<div className="flex flex-row justify-center items-center gap-5 mt-5">
 				{facebook && (
-					<a aria-label="facebook" href="https://www.facebook.com/PerfectTeamMMA/">
+					<a aria-label="facebook" target="_blank" href="https://www.facebook.com/PerfectTeamMMA/">
 						<svg
 							className="w-16 h-16"
 							viewBox="0 0 53 52"
@@ -64,7 +64,7 @@ const Socials = ({
 					</a>
 				)}
 				{instagram && (
-					<a aria-label="instagram" href="https://www.instagram.com/perfectteammma/">
+					<a aria-label="instagram" target="_blank" href="https://www.instagram.com/perfectteammma/">
                         <svg
 							className="w-16 h-16"
 							viewBox="0 0 52 52"
@@ -98,7 +98,7 @@ const Socials = ({
 					</a>
 				)}
 				{youtube && (
-					<a aria-label="youtube" href="https://www.youtube.com/PERFECTTEAMmma">
+					<a aria-label="youtube" target="_blank" href="https://www.youtube.com/PERFECTTEAMmma">
 						<svg
 							className="w-16 h-16"
 							viewBox="0 0 53 52"

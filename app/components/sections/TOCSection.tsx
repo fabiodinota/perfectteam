@@ -88,7 +88,7 @@ const TOCSection = () => {
 			</div>
 			<div className="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 place-content-center w-full h-full gap-5 mt-5">
 				<div className="relative w-full h-[600px] flex flex-col justify-end items-start p-5 border border-[#3C3C3C]">
-					<a aria-label="ben_sherdog_link" href="https://www.sherdog.com/fighter/Ben-Dandois-7473">
+					<a aria-label="ben_sherdog_link" target="_blank" href="https://www.sherdog.com/fighter/Ben-Dandois-7473">
 						<h1 className="font-semibold text-[28px] mt-3 flex flex-col leading-tight hover:underline hover:cursor-pointer">
 							Ben Dandois
 						</h1>
@@ -113,7 +113,7 @@ const TOCSection = () => {
 					/>
 				</div>
 				<div className="relative w-full h-[600px] flex flex-col justify-end items-start p-5 border border-[#3C3C3C]">
-					<a aria-label="ayton_sherdog_link" href="https://www.sherdog.com/fighter/Ayton-De-Paepe-140113">
+					<a aria-label="ayton_sherdog_link" target="_blank" href="https://www.sherdog.com/fighter/Ayton-De-Paepe-140113">
 						<h1 className="font-semibold text-[28px] mt-3 flex flex-col leading-tight hover:underline hover:cursor-pointer">
 							Ayton De Paepe
 						</h1>
@@ -136,7 +136,7 @@ const TOCSection = () => {
 					/>
 				</div>
 				<div className="relative w-full h-[600px] flex flex-col justify-end items-start p-5 border border-[#3C3C3C]">
-					<a aria-label="tarik_sherdog_link" href="https://www.sherdog.com/fighter/Tarik-Jaaidi-277547">
+					<a aria-label="tarik_sherdog_link" target="_blank" href="https://www.sherdog.com/fighter/Tarik-Jaaidi-277547">
 						<h1 className="font-semibold text-[28px] mt-3 flex flex-col leading-tight hover:underline hover:cursor-pointer">
 							Tarik Jaaidi
 						</h1>
@@ -154,7 +154,7 @@ const TOCSection = () => {
 					/>
 				</div>
 				<div className="relative w-full h-[600px] flex flex-col justify-end items-start p-5 border border-[#3C3C3C]">
-					<a aria-label="anthony_sherdog_link" href="https://www.sherdog.com/fighter/Anthony-Lambrechts-269541">
+					<a aria-label="anthony_sherdog_link" target="_blank" href="https://www.sherdog.com/fighter/Anthony-Lambrechts-269541">
 						<h1 className="font-semibold text-[28px] mt-3 flex flex-col leading-tight hover:underline hover:cursor-pointer">
 							Anthony
 						</h1>

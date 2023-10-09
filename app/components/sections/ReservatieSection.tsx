@@ -29,7 +29,7 @@ const ReservatieSection = () => {
 						abonnementen!
 					</p>
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
-						<a aria-label="les_reservatie" href="https://perfectteam.be/ptms/aanmelden.php">Reserveer Les</a>
+						<a aria-label="les_reservatie" target="_blank" href="https://perfectteam.be/ptms/aanmelden.php">Reserveer Les</a>
 					</button>
 					<Image
 						src={Lessen}
@@ -51,7 +51,7 @@ const ReservatieSection = () => {
 						aanvang van de gewenste les aan.
 					</p>
 					<button className="px-20 mt-5 h-[60px] bg-green text-background">
-						<a aria-label="proefles_reservatie" href="https://perfectteam.be/ptms/aanvraagproefles.php">Vraag Proefles Aan</a>
+						<a aria-label="proefles_reservatie" target="_blank" href="https://perfectteam.be/ptms/aanvraagproefles.php">Vraag Proefles Aan</a>
 					</button>
 					<Image
 						src={ProefLessen}
