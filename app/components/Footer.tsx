@@ -32,7 +32,7 @@ const Footer = () => {
                         © Copyright 2019 Perfect Team - All Rights Reserved
                 </h1>
                 <div className="flex flex-row justify-center items-center gap-0">
-                    <a href="https://www.facebook.com/PerfectTeamMMA/">
+                    <a aria-label="facebook" href="https://www.facebook.com/PerfectTeamMMA/">
                         <svg
                                 className="w-16 h-16"
                                 viewBox="0 0 53 52"
@@ -57,7 +57,7 @@ const Footer = () => {
                                 </defs>
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/perfectteammma/">
+                    <a aria-label="instagram" href="https://www.instagram.com/perfectteammma/">
                         <svg
                                 className="w-16 h-16"
                                 viewBox="0 0 52 52"
@@ -82,7 +82,7 @@ const Footer = () => {
                                 </defs>
                         </svg>
                     </a>
-                    <a href="https://www.youtube.com/PERFECTTEAMmma">
+                    <a aria-label="youtube" href="https://www.youtube.com/PERFECTTEAMmma">
                         <svg
                             className="w-16 h-16"
                             viewBox="0 0 53 52"

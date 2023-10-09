@@ -122,7 +122,7 @@ const AanbodSection = () => {
 						website:
 						<br />
 						<br />
-						<a className="text-green" href="https://www.victoryfighttobefit.be/">
+						<a aria-label="Victory Fight To Be Fit Website" className="text-green" href="https://www.victoryfighttobefit.be/">
 							Victory Fight To Be Fit Website{" "}
 						</a>
 					</p>
