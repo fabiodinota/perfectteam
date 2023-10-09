@@ -21,8 +21,10 @@ const ModalComponent = ({
 	};
 
 	const [slide, setSlide] = useState(slideIndex);
+    const [slideDirection, setSlideDirection] = useState<"left" | "right">("right");
 
 	const Decrease = () => {
+        setSlideDirection("left");
 		if (slide >= minMax.min + 1 && slide <= minMax.max) {
 			setSlide(slide - 1);
 		} else {
@@ -30,6 +32,7 @@ const ModalComponent = ({
 		}
 	};
 	const Increase = () => {
+        setSlideDirection("right");
 		if (slide >= minMax.min && slide <= minMax.max - 1) {
 			setSlide(slide + 1);
 		} else {
@@ -37,10 +40,13 @@ const ModalComponent = ({
 		}
 	};
 
+    const xInitial = slideDirection === "right" ? -50 : 50;
+    const xExit = slideDirection === "right" ? 50 : -50;
+
 	const imageVariant = {
 		initial: {
 			opacity: 0,
-			x: 50,
+			x: xInitial,
 		},
 		animate: {
 			opacity: 1,
@@ -52,7 +58,7 @@ const ModalComponent = ({
 		},
 		exit: {
 			opacity: 0,
-			x: -50,
+			x: xExit,
 			transition: {
 				duration: 0.5,
 				ease: [0.2, 0.005, 0.0, 0.995],
